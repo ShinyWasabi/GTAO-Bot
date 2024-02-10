@@ -1,0 +1,4 @@
+node_modules
+.env
+tunables-decrypted.json
+bot.log
