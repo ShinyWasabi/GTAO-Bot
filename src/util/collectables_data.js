@@ -21,7 +21,8 @@ function get_daily_collectible_locations() {
         hidden_caches: new Array(10),
         shipwrecked: undefined,
         buried_stashes: new Array(2),
-        skydives: new Array(10)
+        skydives: new Array(10),
+        ls_tags: new Array(5)
     };
 
     let index = get_objective_day();
@@ -53,6 +54,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 5;
             collectables.skydives[8] = 2;
             collectables.skydives[9] = 4;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 1;
+            collectables.ls_tags[2] = 2;
+            collectables.ls_tags[3] = 3;
+            collectables.ls_tags[4] = 4;
             break;
         case 1:
             collectables.treasure_chests[0] = 0;
@@ -80,6 +86,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 22;
             collectables.skydives[8] = 24;
             collectables.skydives[9] = 18;
+            collectables.ls_tags[0] = 7;
+            collectables.ls_tags[1] = 17;
+            collectables.ls_tags[2] = 21;
+            collectables.ls_tags[3] = 24;
+            collectables.ls_tags[4] = 29;
             break;
         case 2:
             collectables.treasure_chests[0] = 1;
@@ -107,6 +118,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 8;
             collectables.skydives[8] = 23;
             collectables.skydives[9] = 24;
+            collectables.ls_tags[0] = 5;
+            collectables.ls_tags[1] = 6;
+            collectables.ls_tags[2] = 7;
+            collectables.ls_tags[3] = 11;
+            collectables.ls_tags[4] = 20;
             break;
         case 3:
             collectables.treasure_chests[0] = 2;
@@ -134,6 +150,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 7;
             collectables.skydives[8] = 18;
             collectables.skydives[9] = 10;
+            collectables.ls_tags[0] = 2;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 18;
+            collectables.ls_tags[4] = 29;
             break;
         case 4:
             collectables.treasure_chests[0] = 3;
@@ -161,6 +182,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 8;
             collectables.skydives[8] = 16;
             collectables.skydives[9] = 7;
+            collectables.ls_tags[0] = 2;
+            collectables.ls_tags[1] = 4;
+            collectables.ls_tags[2] = 16;
+            collectables.ls_tags[3] = 17;
+            collectables.ls_tags[4] = 29;
             break;
         case 5:
             collectables.treasure_chests[0] = 4;
@@ -188,6 +214,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 16;
             collectables.skydives[8] = 9;
             collectables.skydives[9] = 23;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 5;
+            collectables.ls_tags[2] = 14;
+            collectables.ls_tags[3] = 23;
+            collectables.ls_tags[4] = 26;
             break;
         case 6:
             collectables.treasure_chests[0] = 5;
@@ -215,6 +246,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 3;
             collectables.skydives[8] = 11;
             collectables.skydives[9] = 5;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 8;
+            collectables.ls_tags[2] = 12;
+            collectables.ls_tags[3] = 21;
+            collectables.ls_tags[4] = 28;
             break;
         case 7:
             collectables.treasure_chests[0] = 6;
@@ -242,6 +278,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 22;
             collectables.skydives[8] = 3;
             collectables.skydives[9] = 15;
+            collectables.ls_tags[0] = 8;
+            collectables.ls_tags[1] = 10;
+            collectables.ls_tags[2] = 11;
+            collectables.ls_tags[3] = 12;
+            collectables.ls_tags[4] = 24;
             break;
         case 8:
             collectables.treasure_chests[0] = 7;
@@ -269,6 +310,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 23;
             collectables.skydives[8] = 15;
             collectables.skydives[9] = 18;
+            collectables.ls_tags[0] = 5;
+            collectables.ls_tags[1] = 8;
+            collectables.ls_tags[2] = 9;
+            collectables.ls_tags[3] = 22;
+            collectables.ls_tags[4] = 25;
             break;
         case 9:
             collectables.treasure_chests[0] = 8;
@@ -296,6 +342,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 20;
             collectables.skydives[8] = 16;
             collectables.skydives[9] = 11;
+            collectables.ls_tags[0] = 6;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 17;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 29;
             break;
         case 10:
             collectables.treasure_chests[0] = 9;
@@ -323,6 +374,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 20;
             collectables.skydives[8] = 12;
             collectables.skydives[9] = 18;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 8;
+            collectables.ls_tags[2] = 14;
+            collectables.ls_tags[3] = 15;
+            collectables.ls_tags[4] = 25;
             break;
         case 11:
             collectables.treasure_chests[0] = 4;
@@ -350,6 +406,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 21;
             collectables.skydives[8] = 10;
             collectables.skydives[9] = 4;
+            collectables.ls_tags[0] = 5;
+            collectables.ls_tags[1] = 7;
+            collectables.ls_tags[2] = 9;
+            collectables.ls_tags[3] = 15;
+            collectables.ls_tags[4] = 25;
             break;
         case 12:
             collectables.treasure_chests[0] = 3;
@@ -377,6 +438,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 15;
             collectables.skydives[8] = 20;
             collectables.skydives[9] = 2;
+            collectables.ls_tags[0] = 7;
+            collectables.ls_tags[1] = 9;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 20;
+            collectables.ls_tags[4] = 22;
             break;
         case 13:
             collectables.treasure_chests[0] = 8;
@@ -404,6 +470,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 5;
             collectables.skydives[8] = 10;
             collectables.skydives[9] = 17;
+            collectables.ls_tags[0] = 2;
+            collectables.ls_tags[1] = 5;
+            collectables.ls_tags[2] = 20;
+            collectables.ls_tags[3] = 21;
+            collectables.ls_tags[4] = 25;
             break;
         case 14:
             collectables.treasure_chests[0] = 2;
@@ -431,6 +502,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 18;
             collectables.skydives[8] = 3;
             collectables.skydives[9] = 1;
+            collectables.ls_tags[0] = 5;
+            collectables.ls_tags[1] = 6;
+            collectables.ls_tags[2] = 9;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 26;
             break;
         case 15:
             collectables.treasure_chests[0] = 1;
@@ -458,6 +534,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 8;
             collectables.skydives[8] = 2;
             collectables.skydives[9] = 17;
+            collectables.ls_tags[0] = 16;
+            collectables.ls_tags[1] = 17;
+            collectables.ls_tags[2] = 24;
+            collectables.ls_tags[3] = 26;
+            collectables.ls_tags[4] = 27;
             break;
         case 16:
             collectables.treasure_chests[0] = 7;
@@ -485,6 +566,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 1;
             collectables.skydives[8] = 21;
             collectables.skydives[9] = 17;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 1;
+            collectables.ls_tags[2] = 2;
+            collectables.ls_tags[3] = 9;
+            collectables.ls_tags[4] = 13;
             break;
         case 17:
             collectables.treasure_chests[0] = 2;
@@ -512,6 +598,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 18;
             collectables.skydives[8] = 0;
             collectables.skydives[9] = 22;
+            collectables.ls_tags[0] = 6;
+            collectables.ls_tags[1] = 14;
+            collectables.ls_tags[2] = 17;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 26;
             break;
         case 18:
             collectables.treasure_chests[0] = 6;
@@ -539,6 +630,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 21;
             collectables.skydives[8] = 2;
             collectables.skydives[9] = 3;
+            collectables.ls_tags[0] = 4;
+            collectables.ls_tags[1] = 8;
+            collectables.ls_tags[2] = 20;
+            collectables.ls_tags[3] = 21;
+            collectables.ls_tags[4] = 27;
             break;
         case 19:
             collectables.treasure_chests[0] = 7;
@@ -566,6 +662,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 8;
             collectables.skydives[8] = 6;
             collectables.skydives[9] = 2;
+            collectables.ls_tags[0] = 5;
+            collectables.ls_tags[1] = 6;
+            collectables.ls_tags[2] = 7;
+            collectables.ls_tags[3] = 8;
+            collectables.ls_tags[4] = 16;
             break;
         case 20:
             collectables.treasure_chests[0] = 0;
@@ -593,6 +694,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 20;
             collectables.skydives[8] = 23;
             collectables.skydives[9] = 8;
+            collectables.ls_tags[0] = 3;
+            collectables.ls_tags[1] = 10;
+            collectables.ls_tags[2] = 16;
+            collectables.ls_tags[3] = 20;
+            collectables.ls_tags[4] = 22;
             break;
         case 21:
             collectables.treasure_chests[0] = 1;
@@ -620,6 +726,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 8;
             collectables.skydives[8] = 20;
             collectables.skydives[9] = 19;
+            collectables.ls_tags[0] = 3;
+            collectables.ls_tags[1] = 5;
+            collectables.ls_tags[2] = 12;
+            collectables.ls_tags[3] = 17;
+            collectables.ls_tags[4] = 24;
             break;
         case 22:
             collectables.treasure_chests[0] = 6;
@@ -647,6 +758,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 15;
             collectables.skydives[8] = 18;
             collectables.skydives[9] = 3;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 5;
+            collectables.ls_tags[2] = 7;
+            collectables.ls_tags[3] = 10;
+            collectables.ls_tags[4] = 29;
             break;
         case 23:
             collectables.treasure_chests[0] = 7;
@@ -674,6 +790,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 23;
             collectables.skydives[8] = 1;
             collectables.skydives[9] = 9;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 4;
+            collectables.ls_tags[2] = 10;
+            collectables.ls_tags[3] = 19;
+            collectables.ls_tags[4] = 23;
             break;
         case 24:
             collectables.treasure_chests[0] = 8;
@@ -701,6 +822,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 16;
             collectables.skydives[8] = 2;
             collectables.skydives[9] = 4;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 4;
+            collectables.ls_tags[2] = 9;
+            collectables.ls_tags[3] = 12;
+            collectables.ls_tags[4] = 17;
             break;
         case 25:
             collectables.treasure_chests[0] = 6;
@@ -728,6 +854,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 11;
             collectables.skydives[8] = 17;
             collectables.skydives[9] = 3;
+            collectables.ls_tags[0] = 3;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 27;
+            collectables.ls_tags[4] = 28;
             break;
         case 26:
             collectables.treasure_chests[0] = 3;
@@ -755,6 +886,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 1;
             collectables.skydives[8] = 3;
             collectables.skydives[9] = 13;
+            collectables.ls_tags[0] = 10;
+            collectables.ls_tags[1] = 16;
+            collectables.ls_tags[2] = 17;
+            collectables.ls_tags[3] = 19;
+            collectables.ls_tags[4] = 23;
             break;
         case 27:
             collectables.treasure_chests[0] = 5;
@@ -782,6 +918,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 15;
             collectables.skydives[8] = 5;
             collectables.skydives[9] = 7;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 7;
+            collectables.ls_tags[2] = 9;
+            collectables.ls_tags[3] = 14;
+            collectables.ls_tags[4] = 15;
             break;
         case 28:
             collectables.treasure_chests[0] = 6;
@@ -809,6 +950,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 10;
             collectables.skydives[8] = 5;
             collectables.skydives[9] = 16;
+            collectables.ls_tags[0] = 5;
+            collectables.ls_tags[1] = 13;
+            collectables.ls_tags[2] = 14;
+            collectables.ls_tags[3] = 16;
+            collectables.ls_tags[4] = 23;
             break;
         case 29:
             collectables.treasure_chests[0] = 1;
@@ -836,6 +982,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 14;
             collectables.skydives[8] = 13;
             collectables.skydives[9] = 12;
+            collectables.ls_tags[0] = 12;
+            collectables.ls_tags[1] = 17;
+            collectables.ls_tags[2] = 19;
+            collectables.ls_tags[3] = 27;
+            collectables.ls_tags[4] = 29;
             break;
         case 30:
             collectables.treasure_chests[0] = 2;
@@ -863,6 +1014,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 0;
             collectables.skydives[8] = 10;
             collectables.skydives[9] = 15;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 9;
+            collectables.ls_tags[2] = 17;
+            collectables.ls_tags[3] = 24;
+            collectables.ls_tags[4] = 28;
             break;
         case 31:
             collectables.treasure_chests[0] = 9;
@@ -890,6 +1046,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 0;
             collectables.skydives[8] = 12;
             collectables.skydives[9] = 3;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 2;
+            collectables.ls_tags[2] = 17;
+            collectables.ls_tags[3] = 18;
+            collectables.ls_tags[4] = 24;
             break;
         case 32:
             collectables.treasure_chests[0] = 7;
@@ -917,6 +1078,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 4;
             collectables.skydives[8] = 9;
             collectables.skydives[9] = 15;
+            collectables.ls_tags[0] = 7;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 24;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 26;
             break;
         case 33:
             collectables.treasure_chests[0] = 4;
@@ -944,6 +1110,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 2;
             collectables.skydives[8] = 6;
             collectables.skydives[9] = 10;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 14;
+            collectables.ls_tags[3] = 17;
+            collectables.ls_tags[4] = 28;
             break;
         case 34:
             collectables.treasure_chests[0] = 3;
@@ -971,6 +1142,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 24;
             collectables.skydives[8] = 1;
             collectables.skydives[9] = 17;
+            collectables.ls_tags[0] = 6;
+            collectables.ls_tags[1] = 11;
+            collectables.ls_tags[2] = 12;
+            collectables.ls_tags[3] = 23;
+            collectables.ls_tags[4] = 27;
             break;
         case 35:
             collectables.treasure_chests[0] = 4;
@@ -998,6 +1174,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 20;
             collectables.skydives[8] = 16;
             collectables.skydives[9] = 11;
+            collectables.ls_tags[0] = 2;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 21;
+            collectables.ls_tags[3] = 26;
+            collectables.ls_tags[4] = 29;
             break;
         case 36:
             collectables.treasure_chests[0] = 5;
@@ -1025,6 +1206,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 2;
             collectables.skydives[9] = 5;
+            collectables.ls_tags[0] = 18;
+            collectables.ls_tags[1] = 19;
+            collectables.ls_tags[2] = 22;
+            collectables.ls_tags[3] = 23;
+            collectables.ls_tags[4] = 28;
             break;
         case 37:
             collectables.treasure_chests[0] = 3;
@@ -1052,6 +1238,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 0;
             collectables.skydives[8] = 11;
             collectables.skydives[9] = 20;
+            collectables.ls_tags[0] = 2;
+            collectables.ls_tags[1] = 5;
+            collectables.ls_tags[2] = 7;
+            collectables.ls_tags[3] = 14;
+            collectables.ls_tags[4] = 20;
             break;
         case 38:
             collectables.treasure_chests[0] = 4;
@@ -1079,6 +1270,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 20;
             collectables.skydives[8] = 21;
             collectables.skydives[9] = 8;
+            collectables.ls_tags[0] = 3;
+            collectables.ls_tags[1] = 16;
+            collectables.ls_tags[2] = 20;
+            collectables.ls_tags[3] = 22;
+            collectables.ls_tags[4] = 28;
             break;
         case 39:
             collectables.treasure_chests[0] = 7;
@@ -1106,6 +1302,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 5;
             collectables.skydives[8] = 20;
             collectables.skydives[9] = 0;
+            collectables.ls_tags[0] = 6;
+            collectables.ls_tags[1] = 19;
+            collectables.ls_tags[2] = 21;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 28;
             break;
         case 40:
             collectables.treasure_chests[0] = 0;
@@ -1133,6 +1334,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 3;
             collectables.skydives[9] = 19;
+            collectables.ls_tags[0] = 11;
+            collectables.ls_tags[1] = 13;
+            collectables.ls_tags[2] = 20;
+            collectables.ls_tags[3] = 24;
+            collectables.ls_tags[4] = 28;
             break;
         case 41:
             collectables.treasure_chests[0] = 5;
@@ -1160,6 +1366,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 3;
             collectables.skydives[8] = 8;
             collectables.skydives[9] = 5;
+            collectables.ls_tags[0] = 4;
+            collectables.ls_tags[1] = 5;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 16;
+            collectables.ls_tags[4] = 21;
             break;
         case 42:
             collectables.treasure_chests[0] = 6;
@@ -1187,6 +1398,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 8;
             collectables.skydives[9] = 23;
+            collectables.ls_tags[0] = 3;
+            collectables.ls_tags[1] = 10;
+            collectables.ls_tags[2] = 12;
+            collectables.ls_tags[3] = 13;
+            collectables.ls_tags[4] = 24;
             break;
         case 43:
             collectables.treasure_chests[0] = 8;
@@ -1214,6 +1430,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 9;
             collectables.skydives[8] = 12;
             collectables.skydives[9] = 13;
+            collectables.ls_tags[0] = 6;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 18;
+            collectables.ls_tags[4] = 22;
             break;
         case 44:
             collectables.treasure_chests[0] = 2;
@@ -1241,6 +1462,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 24;
             collectables.skydives[8] = 6;
             collectables.skydives[9] = 8;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 17;
+            collectables.ls_tags[3] = 23;
+            collectables.ls_tags[4] = 26;
             break;
         case 45:
             collectables.treasure_chests[0] = 0;
@@ -1268,6 +1494,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 10;
             collectables.skydives[8] = 14;
             collectables.skydives[9] = 4;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 2;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 29;
             break;
         case 46:
             collectables.treasure_chests[0] = 6;
@@ -1295,6 +1526,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 17;
             collectables.skydives[8] = 16;
             collectables.skydives[9] = 6;
+            collectables.ls_tags[0] = 2;
+            collectables.ls_tags[1] = 4;
+            collectables.ls_tags[2] = 23;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 29;
             break;
         case 47:
             collectables.treasure_chests[0] = 0;
@@ -1322,6 +1558,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 13;
             collectables.skydives[8] = 5;
             collectables.skydives[9] = 12;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 7;
+            collectables.ls_tags[2] = 14;
+            collectables.ls_tags[3] = 19;
+            collectables.ls_tags[4] = 29;
             break;
         case 48:
             collectables.treasure_chests[0] = 3;
@@ -1349,6 +1590,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 10;
             collectables.skydives[8] = 12;
             collectables.skydives[9] = 14;
+            collectables.ls_tags[0] = 8;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 17;
+            collectables.ls_tags[3] = 22;
+            collectables.ls_tags[4] = 25;
             break;
         case 49:
             collectables.treasure_chests[0] = 5;
@@ -1376,6 +1622,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 4;
             collectables.skydives[8] = 24;
             collectables.skydives[9] = 10;
+            collectables.ls_tags[0] = 7;
+            collectables.ls_tags[1] = 11;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 19;
+            collectables.ls_tags[4] = 21;
             break;
         case 50:
             collectables.treasure_chests[0] = 2;
@@ -1403,6 +1654,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 0;
             collectables.skydives[8] = 24;
             collectables.skydives[9] = 19;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 10;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 26;
             break;
         case 51:
             collectables.treasure_chests[0] = 4;
@@ -1430,6 +1686,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 15;
             collectables.skydives[8] = 2;
             collectables.skydives[9] = 10;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 3;
+            collectables.ls_tags[2] = 16;
+            collectables.ls_tags[3] = 20;
+            collectables.ls_tags[4] = 29;
             break;
         case 52:
             collectables.treasure_chests[0] = 1;
@@ -1457,6 +1718,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 20;
             collectables.skydives[8] = 5;
             collectables.skydives[9] = 0;
+            collectables.ls_tags[0] = 2;
+            collectables.ls_tags[1] = 9;
+            collectables.ls_tags[2] = 11;
+            collectables.ls_tags[3] = 16;
+            collectables.ls_tags[4] = 29;
             break;
         case 53:
             collectables.treasure_chests[0] = 5;
@@ -1484,6 +1750,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 20;
             collectables.skydives[9] = 9;
+            collectables.ls_tags[0] = 12;
+            collectables.ls_tags[1] = 18;
+            collectables.ls_tags[2] = 20;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 29;
             break;
         case 54:
             collectables.treasure_chests[0] = 7;
@@ -1511,6 +1782,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 5;
             collectables.skydives[8] = 7;
             collectables.skydives[9] = 9;
+            collectables.ls_tags[0] = 12;
+            collectables.ls_tags[1] = 13;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 17;
+            collectables.ls_tags[4] = 23;
             break;
         case 55:
             collectables.treasure_chests[0] = 9;
@@ -1538,6 +1814,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 8;
             collectables.skydives[8] = 13;
             collectables.skydives[9] = 1;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 3;
+            collectables.ls_tags[2] = 7;
+            collectables.ls_tags[3] = 12;
+            collectables.ls_tags[4] = 29;
             break;
         case 56:
             collectables.treasure_chests[0] = 8;
@@ -1565,6 +1846,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 10;
             collectables.skydives[8] = 2;
             collectables.skydives[9] = 16;
+            collectables.ls_tags[0] = 7;
+            collectables.ls_tags[1] = 9;
+            collectables.ls_tags[2] = 12;
+            collectables.ls_tags[3] = 20;
+            collectables.ls_tags[4] = 27;
             break;
         case 57:
             collectables.treasure_chests[0] = 3;
@@ -1592,6 +1878,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 7;
             collectables.skydives[8] = 2;
             collectables.skydives[9] = 15;
+            collectables.ls_tags[0] = 5;
+            collectables.ls_tags[1] = 8;
+            collectables.ls_tags[2] = 12;
+            collectables.ls_tags[3] = 15;
+            collectables.ls_tags[4] = 24;
             break;
         case 58:
             collectables.treasure_chests[0] = 7;
@@ -1619,6 +1910,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 20;
             collectables.skydives[9] = 14;
+            collectables.ls_tags[0] = 3;
+            collectables.ls_tags[1] = 21;
+            collectables.ls_tags[2] = 22;
+            collectables.ls_tags[3] = 24;
+            collectables.ls_tags[4] = 25;
             break;
         case 59:
             collectables.treasure_chests[0] = 8;
@@ -1646,6 +1942,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 14;
             collectables.skydives[8] = 11;
             collectables.skydives[9] = 2;
+            collectables.ls_tags[0] = 2;
+            collectables.ls_tags[1] = 6;
+            collectables.ls_tags[2] = 9;
+            collectables.ls_tags[3] = 18;
+            collectables.ls_tags[4] = 29;
             break;
         case 60:
             collectables.treasure_chests[0] = 2;
@@ -1673,6 +1974,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 19;
             collectables.skydives[8] = 14;
             collectables.skydives[9] = 12;
+            collectables.ls_tags[0] = 6;
+            collectables.ls_tags[1] = 11;
+            collectables.ls_tags[2] = 17;
+            collectables.ls_tags[3] = 28;
+            collectables.ls_tags[4] = 29;
             break;
         case 61:
             collectables.treasure_chests[0] = 0;
@@ -1700,6 +2006,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 21;
             collectables.skydives[8] = 18;
             collectables.skydives[9] = 14;
+            collectables.ls_tags[0] = 5;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 14;
+            collectables.ls_tags[3] = 23;
+            collectables.ls_tags[4] = 24;
             break;
         case 62:
             collectables.treasure_chests[0] = 3;
@@ -1727,6 +2038,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 16;
             collectables.skydives[9] = 3;
+            collectables.ls_tags[0] = 9;
+            collectables.ls_tags[1] = 23;
+            collectables.ls_tags[2] = 25;
+            collectables.ls_tags[3] = 27;
+            collectables.ls_tags[4] = 29;
             break;
         case 63:
             collectables.treasure_chests[0] = 8;
@@ -1754,6 +2070,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 10;
             collectables.skydives[8] = 16;
             collectables.skydives[9] = 13;
+            collectables.ls_tags[0] = 4;
+            collectables.ls_tags[1] = 5;
+            collectables.ls_tags[2] = 13;
+            collectables.ls_tags[3] = 22;
+            collectables.ls_tags[4] = 27;
             break;
         case 64:
             collectables.treasure_chests[0] = 7;
@@ -1781,6 +2102,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 8;
             collectables.skydives[9] = 0;
+            collectables.ls_tags[0] = 10;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 21;
+            collectables.ls_tags[3] = 22;
+            collectables.ls_tags[4] = 27;
             break;
         case 65:
             collectables.treasure_chests[0] = 5;
@@ -1808,6 +2134,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 19;
             collectables.skydives[9] = 10;
+            collectables.ls_tags[0] = 3;
+            collectables.ls_tags[1] = 5;
+            collectables.ls_tags[2] = 16;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 26;
             break;
         case 66:
             collectables.treasure_chests[0] = 9;
@@ -1835,6 +2166,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 17;
             collectables.skydives[8] = 22;
             collectables.skydives[9] = 0;
+            collectables.ls_tags[0] = 7;
+            collectables.ls_tags[1] = 8;
+            collectables.ls_tags[2] = 21;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 28;
             break;
         case 67:
             collectables.treasure_chests[0] = 1;
@@ -1862,6 +2198,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 12;
             collectables.skydives[8] = 1;
             collectables.skydives[9] = 22;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 3;
+            collectables.ls_tags[2] = 17;
+            collectables.ls_tags[3] = 21;
+            collectables.ls_tags[4] = 22;
             break;
         case 68:
             collectables.treasure_chests[0] = 6;
@@ -1889,6 +2230,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 24;
             collectables.skydives[8] = 16;
             collectables.skydives[9] = 23;
+            collectables.ls_tags[0] = 11;
+            collectables.ls_tags[1] = 18;
+            collectables.ls_tags[2] = 20;
+            collectables.ls_tags[3] = 21;
+            collectables.ls_tags[4] = 27;
             break;
         case 69:
             collectables.treasure_chests[0] = 3;
@@ -1916,6 +2262,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 8;
             collectables.skydives[8] = 16;
             collectables.skydives[9] = 5;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 7;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 27;
+            collectables.ls_tags[4] = 29;
             break;
         case 70:
             collectables.treasure_chests[0] = 1;
@@ -1943,6 +2294,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 9;
             collectables.skydives[8] = 6;
             collectables.skydives[9] = 18;
+            collectables.ls_tags[0] = 10;
+            collectables.ls_tags[1] = 11;
+            collectables.ls_tags[2] = 14;
+            collectables.ls_tags[3] = 17;
+            collectables.ls_tags[4] = 28;
             break;
         case 71:
             collectables.treasure_chests[0] = 6;
@@ -1970,6 +2326,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 19;
             collectables.skydives[8] = 4;
             collectables.skydives[9] = 11;
+            collectables.ls_tags[0] = 3;
+            collectables.ls_tags[1] = 9;
+            collectables.ls_tags[2] = 15;
+            collectables.ls_tags[3] = 16;
+            collectables.ls_tags[4] = 26;
             break;
         case 72:
             collectables.treasure_chests[0] = 7;
@@ -1997,6 +2358,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 7;
             collectables.skydives[8] = 0;
             collectables.skydives[9] = 10;
+            collectables.ls_tags[0] = 17;
+            collectables.ls_tags[1] = 18;
+            collectables.ls_tags[2] = 19;
+            collectables.ls_tags[3] = 21;
+            collectables.ls_tags[4] = 23;
             break;
         case 73:
             collectables.treasure_chests[0] = 8;
@@ -2024,6 +2390,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 20;
             collectables.skydives[9] = 9;
+            collectables.ls_tags[0] = 9;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 14;
+            collectables.ls_tags[3] = 18;
+            collectables.ls_tags[4] = 28;
             break;
         case 74:
             collectables.treasure_chests[0] = 3;
@@ -2051,6 +2422,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 21;
             collectables.skydives[8] = 0;
             collectables.skydives[9] = 6;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 5;
+            collectables.ls_tags[2] = 8;
+            collectables.ls_tags[3] = 9;
+            collectables.ls_tags[4] = 15;
             break;
         case 75:
             collectables.treasure_chests[0] = 0;
@@ -2078,6 +2454,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 12;
             collectables.skydives[8] = 6;
             collectables.skydives[9] = 17;
+            collectables.ls_tags[0] = 0;
+            collectables.ls_tags[1] = 11;
+            collectables.ls_tags[2] = 19;
+            collectables.ls_tags[3] = 20;
+            collectables.ls_tags[4] = 28;
             break;
         case 76:
             collectables.treasure_chests[0] = 2;
@@ -2105,6 +2486,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 7;
             collectables.skydives[8] = 1;
             collectables.skydives[9] = 20;
+            collectables.ls_tags[0] = 6;
+            collectables.ls_tags[1] = 10;
+            collectables.ls_tags[2] = 14;
+            collectables.ls_tags[3] = 22;
+            collectables.ls_tags[4] = 29;
             break;
         case 77:
             collectables.treasure_chests[0] = 4;
@@ -2132,6 +2518,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 19;
             collectables.skydives[8] = 21;
             collectables.skydives[9] = 1;
+            collectables.ls_tags[0] = 1;
+            collectables.ls_tags[1] = 4;
+            collectables.ls_tags[2] = 16;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 29;
             break;
         case 78:
             collectables.treasure_chests[0] = 3;
@@ -2159,6 +2550,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 22;
             collectables.skydives[8] = 16;
             collectables.skydives[9] = 11;
+            collectables.ls_tags[0] = 6;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 13;
+            collectables.ls_tags[3] = 19;
+            collectables.ls_tags[4] = 26;
             break;
         case 79:
             collectables.treasure_chests[0] = 1;
@@ -2186,6 +2582,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 21;
             collectables.skydives[8] = 22;
             collectables.skydives[9] = 2;
+            collectables.ls_tags[0] = 19;
+            collectables.ls_tags[1] = 20;
+            collectables.ls_tags[2] = 21;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 27;
             break;
         case 80:
             collectables.treasure_chests[0] = 6;
@@ -2213,6 +2614,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 6;
             collectables.skydives[8] = 13;
             collectables.skydives[9] = 12;
+            collectables.ls_tags[0] = 8;
+            collectables.ls_tags[1] = 11;
+            collectables.ls_tags[2] = 12;
+            collectables.ls_tags[3] = 13;
+            collectables.ls_tags[4] = 25;
             break;
         case 81:
             collectables.treasure_chests[0] = 5;
@@ -2240,6 +2646,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 1;
             collectables.skydives[8] = 6;
             collectables.skydives[9] = 17;
+            collectables.ls_tags[0] = 7;
+            collectables.ls_tags[1] = 8;
+            collectables.ls_tags[2] = 9;
+            collectables.ls_tags[3] = 13;
+            collectables.ls_tags[4] = 22;
             break;
         case 82:
             collectables.treasure_chests[0] = 7;
@@ -2267,6 +2678,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 23;
             collectables.skydives[8] = 19;
             collectables.skydives[9] = 2;
+            collectables.ls_tags[0] = 2;
+            collectables.ls_tags[1] = 7;
+            collectables.ls_tags[2] = 9;
+            collectables.ls_tags[3] = 25;
+            collectables.ls_tags[4] = 28;
             break;
         case 83:
             collectables.treasure_chests[0] = 8;
@@ -2294,6 +2710,11 @@ function get_daily_collectible_locations() {
             collectables.skydives[7] = 18;
             collectables.skydives[8] = 24;
             collectables.skydives[9] = 2;
+            collectables.ls_tags[0] = 11;
+            collectables.ls_tags[1] = 12;
+            collectables.ls_tags[2] = 20;
+            collectables.ls_tags[3] = 22;
+            collectables.ls_tags[4] = 28;
             break;
     }
 

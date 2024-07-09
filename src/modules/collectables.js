@@ -31,6 +31,12 @@ function get_skydive_location(skydive_index) {
     return locations.skydives[skydive_index];
 }
 
+function get_ls_tag_location(tag_index) {
+    let locations = collectables_data.get_daily_collectible_locations();
+
+    return locations.ls_tags[tag_index];
+}
+
 function create_treasure_chest_message() {
     let message = ``;
 
@@ -54,7 +60,7 @@ function create_hidden_cache_message() {
 }
 
 function create_shipwrecked_message() {
-    let loc = get_shipwrecked_location(0);
+    let loc = get_shipwrecked_location();
     let message = `- Location: **#${loc + 1}**, **${zones.shipwrecked[loc]}**`;
 
     return message;
@@ -82,10 +88,22 @@ function create_skydive_message() {
     return message;
 }
 
+function create_ls_tag_message() {
+    let message = ``;
+
+    for (let i = 0; i <= 4; i++) {
+        let loc = get_ls_tag_location(i);
+        message += `- LS Tag ${i + 1}: **#${loc + 1}, ${zones.ls_tags[loc]}**\n`;
+    }
+
+    return message;
+}
+
 module.exports = {
     create_treasure_chest_message,
     create_hidden_cache_message,
     create_shipwrecked_message,
     create_buried_stash_message,
-    create_skydive_message
+    create_skydive_message,
+    create_ls_tag_message
 };

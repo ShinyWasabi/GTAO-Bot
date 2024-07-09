@@ -13,6 +13,7 @@ const cron = require('node-cron');
 const paths = require('./paths.js');
 const logger = require('./logger/logger.js');
 const collectables = require('./modules/collectables.js');
+const madrazo_hits = require('./modules/madrazo_hits.js');
 const exotic_exports = require('./modules/exotic_exports.js');
 const street_dealers = require('./modules/street_dealers.js');
 const gun_van = require('./modules/gun_van.js');
@@ -61,12 +62,8 @@ function setup_cron_jobs() {
         send_collectible_embed('Shipwreck', () => 'The new Shipwreck location is now available!\n\n' + collectables.create_shipwrecked_message(), 'shipwrecked', 0xEEEEE4);
         send_collectible_embed('Buried Stashes', () => 'The new Buried Stash locations are now available!\n\n' + collectables.create_buried_stash_message(), 'shipwrecked', 0xEEEEE4);
         send_collectible_embed('Junk Energy Skydives', () => 'The new Junk Energy Skydive locations are now available!\n\n' + collectables.create_skydive_message(), 'skydive', 0xEEEEE4);
-    }, {
-        timezone: 'Europe/London'
-    });
-
-    // 7 AM UTC
-    cron.schedule('0 7 * * *', () => {
+        send_collectible_embed('LS Tags', () => 'The new LS Tag locations are now available!\n\n' + collectables.create_ls_tag_message(), 'tag', 0xEEEEE4);
+        send_collectible_embed('Madrazo Hits', () => 'The new Madrazo Hit location is now available!\n\n' + madrazo_hits.create_madrazo_hit_message(), 'hit', 0x6338E8);
         send_collectible_embed('Exotic Exports', () => 'The new Exotic Exports vehicle list is now available!\n\n' + exotic_exports.create_exotic_exports_message(), 'exotic', 0x045CC6);
         send_collectible_embed('Street Dealers', () => 'The new Street Dealers locations & stock are now available!\n\n' + street_dealers.create_street_dealers_message(), 'dealer', 0x760485);
         send_collectible_embed('Gun Van', () => 'The new Gun Van location is now available!\n\n' + gun_van.create_gun_van_message(), 'van', 0x070607);
