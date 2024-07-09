@@ -8,8 +8,8 @@ It sends a message to the channel you specified at daily reset times. You can al
 * Shipwreck
 * Buried Stashes
 * Junk Energy Skydives
-
-# 7 AM UTC
+* LS Tags
+* Madrazo Hits
 * Exotic Exports (Vehicle List)
 * Street Dealers (Locations & Stock)
 * Gun Van (Location & Stock)
